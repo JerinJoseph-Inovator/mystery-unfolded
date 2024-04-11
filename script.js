@@ -5,6 +5,20 @@ const eyeball = document.querySelector('.eyeball');
 // Get the button element
 const startButton = document.getElementById('eyeButton'); // Assuming you have a button with id 'startButton'
 
+//        AUDIIOOO
+document.addEventListener('DOMContentLoaded', function() {
+  var clickableHeader = document.getElementById('clickableHeader');
+  var audio = document.getElementById('myAudio');
+
+  clickableHeader.addEventListener('click', function() {
+      if (audio.paused) {
+          audio.play(); // Start playing the audio
+      } else {
+          audio.pause(); // Pause the audio if it's already playing
+      }
+  });
+});
+
 
 
 document.addEventListener("mousemove", (e) => {

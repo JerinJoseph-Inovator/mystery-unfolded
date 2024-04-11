@@ -1,3 +1,23 @@
+
+
+
+  // Wait for the page to load
+  document.addEventListener('DOMContentLoaded', function() {
+    // Function to start playing the audio after 5 seconds
+    function playAudio() {
+      var audio = document.getElementById('myAudio');
+      audio.play(); // Start playing the audio
+    }
+
+    // Call the playAudio function after 5 seconds
+    setTimeout(playAudio, 3000); // 5000 milliseconds = 5 seconds
+  });
+
+
+
+
+
+
 (function() {
     function $(id) {
       return document.getElementById(id);
