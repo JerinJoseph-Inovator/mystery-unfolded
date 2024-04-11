@@ -110,6 +110,6 @@ function goToPage(page) {
   
 
   button.addEventListener('click', () => {
-  images[0].src = '/resources/read/chp3.jpg';
-  images[1].src = '/resources/read/chp3.jpg';
+  images[0].src = 'resources/read/chp3.jpg';
+  images[1].src = 'resources/read/chp3.jpg';
 });

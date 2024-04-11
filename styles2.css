@@ -17,7 +17,7 @@
 }
 body {
   background: white;
-  background-image: url(/resources/flipballons.png);
+  background-image: url(resources/flipballons.png);
   
 	background-attachment: cover;
 	background-position: fixed;
