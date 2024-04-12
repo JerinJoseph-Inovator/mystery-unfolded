@@ -55,7 +55,6 @@
 .turnOnEye {
   background-color: transparent;
   border: none;
-  
   position: absolute; /* Change from relative to absolute */
   padding: 0;
   cursor: pointer;

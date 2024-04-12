@@ -24,6 +24,35 @@ body {
 	background-repeat: repeat;
 }
 
+.name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  stroke-dasharray: 800;
+  transform: scale(70%);
+  visibility: hidden; /* Initially hidden */
+  animation: showName 8s linear 8s forwards, writeBase 30s linear 8s; /* Delay and animation */
+}
+
+@keyframes showName {
+  0% {
+      visibility: hidden; /* Initially hidden */
+  }
+  100% {
+      visibility: visible; /* Visible after delay */
+  }
+}
+
+@keyframes writeBase {
+  0% {
+      stroke-dashoffset: 800;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
 #card-front {
   color: #FFDFDF;
 }
@@ -342,4 +371,33 @@ body {
   to {
     transform: translateY(0);
   }
+}
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 50%;
+  left: 50%;
+}
+
+#nextPageBtn {
+  padding: 10px 20px;
+  background-color: #1174ad;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#counter {
+  font-size: 24px;
+  color: #000000;
+  position: absolute;
+  padding: 5px;
+  right: 68%; /* Adjust this value to position the counter */
+  box-shadow: 0px 4px 20px #FFEFEF;
 }

@@ -1,21 +1,74 @@
 
 
+const audio = document.getElementById('myAudio');
+const playPauseButton = document.getElementById('playPauseButton');
 
-  // Wait for the page to load
-  document.addEventListener('DOMContentLoaded', function() {
-    // Function to start playing the audio after 5 seconds
-    function playAudio() {
-      var audio = document.getElementById('myAudio');
-      audio.play(); // Start playing the audio
-    }
+setTimeout(() => {
+  document.querySelector('.name').style.display = 'none';
+}, 41000); // 38 seconds delay
 
-    // Call the playAudio function after 5 seconds
-    setTimeout(playAudio, 3000); // 5000 milliseconds = 5 seconds
-  });
+// Get the counter element
+const counterElement = document.getElementById('counter');
+// Get the button element
+const nextPageBtn = document.getElementById('nextPageBtn');
+
+// Set the initial time in seconds (2 minutes = 120 seconds)
+let time = 120;
+
+// Update the counter every second
+const countdown = setInterval(() => {
+  // Convert time to minutes and seconds
+  const minutes = Math.floor(time / 60);
+  const seconds = time % 60;
+
+  // Display the time in MM:SS format
+  counterElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+  // Decrease time by 1 second
+  time--;
+
+  // If time reaches 0, stop the countdown and enable the button
+  if (time < 0) {
+    clearInterval(countdown);
+    counterElement.textContent = 'Time Up!';
+    nextPageBtn.removeAttribute('disabled'); // Enable the button
+  }
+}, 1000);
+
+// Disable the button initially
+nextPageBtn.setAttribute('disabled', true);
+
+// Add an event listener to the button to navigate to the next page (replace 'nextPage.html' with the actual URL of the next page)
+nextPageBtn.addEventListener('click', () => {
+  window.location.href = 'cred.html';
+});
 
 
 
+function togglePlayPause() {
+  if (audio.paused) {
+    audio.play();
+    playPauseButton.textContent = 'Pause';
+  } else {
+    audio.pause();
+    playPauseButton.textContent = 'Play';
+  }
+}
 
+document.addEventListener('DOMContentLoaded', () => {
+  const element = document.querySelector('.name');
+  setTimeout(() => {
+      element.style.visibility = 'hidden';
+  }, 13000); // Hide element after 5 seconds (8s delay + 30s animation)
+});
+
+
+window.onload = function() {
+  // Check if the loading page has signaled completion
+  if (localStorage.getItem('loadingComplete')) {
+    document.getElementById('main-content').style.display = 'block';
+  }
+};
 
 
 (function() {

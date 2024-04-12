@@ -19,6 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+const Eyebutton = document.getElementById('eyeButton');
+    const audio = document.getElementById('audiosfx');
+
+    Eyebutton.addEventListener('click', () => {
+      audiosfx.play();
+    });
+
 
 
 document.addEventListener("mousemove", (e) => {
