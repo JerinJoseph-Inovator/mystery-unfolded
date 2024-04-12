@@ -96,18 +96,36 @@ window.onload = function() {
 
       
   script = `
+  A small poem... Can you assume it's 10th April
+  and also I wrote it in 30mins so please don't expect much
   .....
-Hey Man!
-Another year older? 
-Well, I could think of 
-worse things to be…
-like dead! 
-Happy Birthday 
-to my friend
-
-but the main thing is 
-you were born
-nice, Good Job!
+  Hey Christal
+  Another Year older? 
+  
+  Wrinkles and gray hair, they sneak up fast,
+  But we'll ignore them, in your case 
+  So blow those candles, give them a real fight,
+  Party till dawn, make the stars blink in delight.
+  
+  Today was the day
+  An Angel fell from the clouds 
+  It was April, not May
+  With dazzling sparkle which delights the crowds
+  
+  Always interested in the beauty of nature 
+  Some of your flawless features 
+  In search of nature's masterpiece 
+  Try Sighting a mirror to find peace
+  
+  Your kindness shines, 
+  Never to be undermined, 
+  Like a door to heaven without Key
+  Being 'you' is the best recipe.
+  
+  May God's blessings fill your day,
+  As you celebrate in your own special way.
+  Today's your day to shine and play,
+  Make it amazing in every single say!
 ..........
             Hooria
 `;

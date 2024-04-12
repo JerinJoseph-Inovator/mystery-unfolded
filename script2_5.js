@@ -1,5 +1,5 @@
 const retryBtn = document.getElementById('retry-btn'); // Added retry button reference
-const words = ['MOSQUITO', 'FLY']; 
+const words = ['MOSQUITO']; 
 // Get the button element by its ID
 var nxtButn = document.getElementById('nxtBtn');
 
